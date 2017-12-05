@@ -1,0 +1,26 @@
+package unit3;
+
+import java.util.InputMismatchException;
+
+public class UnitTwoMethods {
+    public static void main(String[] args){
+        System.out.println("reverse:");
+        reverseTest();
+        System.out.println(" ");
+        System.out.println("evenlySpaced");
+        evenlySpacedTest();
+    }
+
+    public static String reverse(String word){
+        int wordLength = word.length() - 1;
+        //Finds the length of the word selected
+        String reversed = "";
+        //Sets reversed as a blank
+        for(int counter = wordLength; counter >= 0; counter--){
+            reversed += word.charAt(counter);
+            //Finds the last letter then collects each letter before it in that order
+        }
+        //For loop to reverse the order of letters
+        return reversed;
+        //Returns the processed word (now reversed)
+    }
